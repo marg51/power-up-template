@@ -6,6 +6,7 @@ var t = TrelloPowerUp.iframe();
 var arg = t.arg('arg');
 
 t.render(function(){
+    debugger
   // make sure your rendering logic lives here, since we will
   // recall this method as the user adds and removes attachments
   // from your section
@@ -15,6 +16,7 @@ t.render(function(){
     return attachment.url.indexOf('http://www.nps.gov/yell/') == 0;
   })
   .then(function(yellowstoneAttachments){
+      debugger
     var urls = yellowstoneAttachments.map(function(a){ return a.url; });
     document.getElementById('urls').textContent = urls.join(', ');
   })

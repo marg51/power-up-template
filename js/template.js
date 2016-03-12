@@ -23,6 +23,7 @@ var getBadges = function(t){
   return t.card('name')
   .get('name')
   .then(function(cardName){
+      debugger
     var badgeColor;
     var icon = GRAY_ICON;
     var lowercaseName = cardName.toLowerCase();
