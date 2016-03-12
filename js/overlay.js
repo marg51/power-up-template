@@ -6,6 +6,7 @@ var t = TrelloPowerUp.iframe();
 var num = t.arg('rand');
 
 t.render(function(){
+    debugger
   // this function we be called once on initial load
   // and then called each time something changes that
   // you might want to react to, such as new data being
@@ -14,6 +15,7 @@ t.render(function(){
 
 // close overlay if user clicks outside our content
 document.addEventListener('click', function(e) {
+    debugger
   if(e.target.tagName == 'BODY') {
     t.closeOverlay().done();
   }
