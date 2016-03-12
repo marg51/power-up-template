@@ -38,9 +38,7 @@ var getBadges = function(t){
     }, [])
 
 
-    return {
-        static: badges
-    }
+    return badges
   })
 };
 
