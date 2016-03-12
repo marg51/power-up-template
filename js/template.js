@@ -127,12 +127,12 @@ var cardButtonCallback = function(t){
   });
 
   return t.popup({
-    title: 'Popup Search Example',
+    title: 'Coucou toi',
     items: items,
     search: {
       count: 5,
-      placeholder: 'Search National Parks',
-      empty: 'No parks found'
+      placeholder: 'Bien?',
+      empty: 'yarienla'
     }
   });
 };
