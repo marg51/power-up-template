@@ -26,7 +26,7 @@ var getBadges = function(t){
     var lowercaseName = cardName.toLowerCase();
     var types = [{search: ':f', name: 'frontend', color: 'green'},{search: ':b', name: 'backend', color: 'red'}, {search: ':d', name: 'design', color: '#F5F5F5'}]
 
-    var badges = types.reduce((badge, type) => {
+    var badges = types.reduce((badges, type) => {
         if(lowercaseName.indexOf(type.search)>-1) {
             badges.push({
                 title: 'Team '+type.name, // for detail badges only
@@ -34,6 +34,7 @@ var getBadges = function(t){
                 color: type.color
             })
         }
+        return badges
     }, [])
 
 
